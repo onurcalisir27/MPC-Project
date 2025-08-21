@@ -5,13 +5,15 @@ Traditional MPC struggles with complex robotic systems due to complex nonlinear 
 This solution suggests a heirarchical form of control utilising Inverse Dynamics, Integral Sliding Modes, and traditional MPC. The paper suggests that the usage of ISM helps better handle the uncertainties, and our implementation of the algorithm proves the same. This algorithm leads to a simplified MPC optimization, and significantly reduces computational complexity. 
 
 
-## Block Diagram
 
-![Block Diagram](images/block_diagram.png)
+## Joint Error Plot with the Heirarchical Algorithm
 
-## Example Error Plot
+![Tracking Error ](Joint_Tracking_Errors.jpg)
 
-![Tracking Error Example](images/tracking_error_plot.png)
+## Uncertainty Compensation
+![Uncertainty Compensation](Uncertainty_Compensation.jpg)
+
+
 
 
 ## Features
