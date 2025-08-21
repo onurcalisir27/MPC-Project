@@ -4,6 +4,16 @@
 Traditional MPC struggles with complex robotic systems due to complex nonlinear dynamics, modelling uncertainties and computational cost. 
 This solution suggests a heirarchical form of control utilising Inverse Dynamics, Integral Sliding Modes, and traditional MPC. The paper suggests that the usage of ISM helps better handle the uncertainties, and our implementation of the algorithm proves the same. This algorithm leads to a simplified MPC optimization, and significantly reduces computational complexity. 
 
+
+## Block Diagram
+
+![Block Diagram](images/block_diagram.png)
+
+## Example Error Plot
+
+![Tracking Error Example](images/tracking_error_plot.png)
+
+
 ## Features
 
 - **Robot Model:** 3-link manipulator with forward kinematics, Jacobian, and animation support ([`Robot`](Robot.m)).
@@ -25,8 +35,7 @@ This solution suggests a heirarchical form of control utilising Inverse Dynamics
 - [`InverseDynamicsController.m`](InverseDynamicsController.m): Inverse dynamics and uncertainty modeling.
 - [`InverseDynamicsISMMPCController.m`](InverseDynamicsISMMPCController.m): Combined MPC-ISM controller.
 - [`RobotSimulator.m`](RobotSimulator.m): Simulation and result visualization.
-- `LICENSE`: Apache 2.0 License.
-- `MPC for Robot Manipulators with Integral Sliding Modes Generation .pdf`: Reference paper.
+- `MPC for Robot Manipulators with Integral Sliding Modes Generation.pdf`: Reference paper by Icremona, Ferrara, Magni in the IEEE/ASME Transactions on mechatronics
 - Images: Block diagrams and error plots.
 
 ## Getting Started
@@ -43,4 +52,4 @@ This solution suggests a heirarchical form of control utilising Inverse Dynamics
 3. Run the main script:
 
    ```matlab
-   driver
+   driver.m
